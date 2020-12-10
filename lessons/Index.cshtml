@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@using _5456.Models;
+@model List<Day>
+
+@foreach (var item in Model)
+{
+<li>@item.Name</li>
+    foreach (var less in item.Lessons)
+    {
+        <o1>@less.Lesson1</o1>
+    }
+        
+}
